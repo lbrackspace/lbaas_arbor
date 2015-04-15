@@ -1,0 +1,6 @@
+requests==2.6.0
+testtools==1.7.1
+pymysql==0.6.6
+mock==1.0.1
+suds-jurko==0.6
+six==1.9.0

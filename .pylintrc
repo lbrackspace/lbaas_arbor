@@ -1,0 +1,76 @@
+[MASTER]
+# Add files or directories to the blacklist. They should be base names, not
+# paths.
+ignore=.git
+
+[MESSAGES CONTROL]
+disable=
+# "F" Fatal errors that prevent further processing
+ import-error,
+# "E" Error for important programming issues (likely bugs)
+ no-member,
+ no-name-in-module,
+ super-on-old-class,
+ too-many-function-args,
+# "W" Warnings for stylistic problems or minor programming issues
+ abstract-method,
+ bad-builtin,
+ broad-except,
+ expression-not-assigned,
+ fixme,
+ global-statement,
+ logging-format-interpolation,
+ no-init,
+ protected-access,
+ redefined-builtin,
+ star-args,
+ unused-argument,
+# "C" Coding convention violations
+ bad-continuation,
+ invalid-name,
+ missing-docstring,
+# "R" Refactor recommendations
+ abstract-class-little-used,
+ abstract-class-not-used,
+ duplicate-code,
+ interface-not-implemented,
+ no-self-use,
+ too-few-public-methods,
+ too-many-ancestors,
+ too-many-arguments,
+ too-many-branches,
+ too-many-instance-attributes,
+ too-many-lines,
+ too-many-locals,
+ too-many-public-methods,
+ too-many-return-statements,
+ too-many-statements
+
+[REPORTS]
+# Tells whether to display a full report or only the messages
+reports=no
+
+[BASIC]
+# Variable names can be 1 to 31 characters long, with lowercase and underscores
+variable-rgx=[a-z_][a-z0-9_]{0,30}$
+
+# Argument names can be 2 to 31 characters long, with lowercase and underscores
+argument-rgx=[a-z_][a-z0-9_]{1,30}$
+
+# Method names should be at least 3 characters long
+# and be lowecased with underscores
+method-rgx=([a-z_][a-z0-9_]{2,}|setUp|tearDown)$
+
+[FORMAT]
+# Maximum number of characters on a single line.
+max-line-length=79
+
+[MISCELLANEOUS]
+# List of note tags to take in consideration, separated by a comma.
+notes=FIXME,XXX,TODO
+
+[CLASSES]
+# List of interface methods to ignore, separated by a comma. This is used for
+# instance to not check methods defines in Zope's Interface base class.
+ignore-iface-methods=
+
